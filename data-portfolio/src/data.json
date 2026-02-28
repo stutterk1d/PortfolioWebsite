@@ -1,0 +1,202 @@
+{
+  "personalInfo": {
+    "name": "Ethan Tran",
+    "label": "Data Science Intern",
+    "email": "ethantran03@gmail.com",
+    "github": "stutterk1d",
+    "linkedin": "ethan-tran-620668253",
+    "phone": "714-234-8860",
+    "headshotUrl": "/assets/HeadshotImage.jpg",
+    "cvUrl": "/assets/EthanCv.pdf"
+  },
+  "summary": "Hi! ",
+  "experience": [
+    {
+      "company": "ITTIA",
+      "position": "Data Science Intern",
+      "startDate": "May 2025",
+      "endDate": "September 2025",
+      "summary": "Built on-device data pipelines with ITTIA DB Lite on STM32N6 microcontrollers.",
+      "description": [
+        "Build on-device data pipelines with ITTIA DB Lite on STM32 to collect, filter, and aggregate time-series sensor data for ML feature engineering.",
+        "Designed schemas, wrote queries, and benchmarked ingestion/latency to support low-memory, low-latency analytics.",
+        "Ran experiments and analyses to compare storage formats and query plans, producing metrics dashboards and test suites used by the team.",
+        "Authored examples for embedded ML workflows that demonstrated reproducible data prep and evaluation on microcontrollers."
+      ]
+    },
+    {
+      "company": "Crawlbee",
+      "position": "Research Fellow",
+      "startDate": "June 2024",
+      "endDate": "August 2024",
+      "summary": "Developed a real-time data visualization dashboard on AWS EC2.",
+      "description": [
+        "Developed a real-time data visualization dashboard on AWS EC2, managing over 100 million monthly crawls.",
+        "Designed and implemented a scalable back-end architecture using MySQL, Node.js, and Express.js, exceeding performance requirements by 70% through optimized REST API endpoints and a custom data pipeline.",
+        "Collaborated with co-founders to guarantee the dashboard met business and technical needs, visualizing crawl metrics through Grafana hosted on EC2, improving decision-making and resource allocation.",
+        "Conducted comprehensive performance testing using Grafana k6 and Postman, achieving an average latency of 133 ms in high-traffic scenarios.",
+        "Implemented CI/CD pipelines with GitHub Actions and Docker, guaranteeing automatic deployment, performance testing, and system scalability."
+      ]
+    },
+    {
+      "company": "The Ballard Cognitive and Neural Sciences Lab",
+      "position": "Research Assistant",
+      "startDate": "September 2023",
+      "endDate": "June 2024",
+      "summary": "Analyzed fMRI data to investigate the neural basis of decision-making.",
+      "description": [
+        "Analyzed fMRI data to investigate the neural basis of decision-making, contributing to cutting-edge neuroscience research.",
+        "Conducted data preprocessing, feature engineering, and ROI selection using FSL and Python.",
+        "Developed statistical models and applied contrasts and t-contrasts, resulting in the identification of key activation patterns.",
+        "Visualized findings through statistical parametric maps and ROI plots, creating insights for the research team."
+      ]
+    },
+    {
+      "company": "Data Science Academy",
+      "position": "Academic Leader",
+      "startDate": "March 2023",
+      "endDate": "June 2024",
+      "summary": "Instructed students in data science fundamentals.",
+      "description": [
+        "Instructed over 200 middle and high school students in data science fundamentals, fostering early interest in STEM fields.",
+        "Designed and adapted curriculum covering Python programming, data cleaning, visualization, and machine learning using Google Colab.",
+        "Implemented interactive teaching methods, resulting in a 30% increase in student engagement and positive feedback shown through surveys.",
+        "Mentored students in developing mini-projects, enriching their practical understanding of data science concepts."
+      ]
+    },
+    {
+      "company": "Highlander Statistics Society",
+      "position": "President",
+      "startDate": "May 2023",
+      "endDate": "June 2024",
+      "summary": "Led the management and execution of two data science projects.",
+      "description": [
+        "Led the management and execution of two data science projects in Python and SQL, with a team of approximately five members per project.",
+        "Supervised a \"Predictive Modeling for Housing Prices\" project, which involved data preprocessing, exploratory data analysis, feature engineering, model building, evaluation, and deployment of a predictive housing price model.",
+        "Oversaw the \"Customer Behavior Analysis\" project, which included data import, data exploration, customer segmentation, cohort analysis, product analysis, SQL reports, and data visualization using Python libraries."
+      ]
+    },
+    {
+      "company": "Association of Computing Machinery at UCR",
+      "position": "Alumni Chair",
+      "startDate": "June 2023",
+      "endDate": "March 2024",
+      "summary": "Organized events connecting students with professionals.",
+      "description": [
+        "Organized and coordinated networking events, panel discussions, and workshops, connecting over 100 students with industry professionals and alumni.",
+        "Assisted in organizing club events, hackathons, and workshops, leveraging the expertise and resources of alumni to improve the overall experience.",
+        "Led a two-week-long data manipulation workshop for the ACM Data Science Series, teaching Pandas data wrangling, cleaning, and analysis techniques.",
+        "Created an interactive coding environment and provided personalized feedback to guarantee an engaging learning experience."
+      ]
+    },
+    {
+      "company": "Artificial Intelligence Student Collective",
+      "position": "Project Manager",
+      "startDate": "January 2024",
+      "endDate": "September 2024",
+      "summary": "Led workshop series on recommender systems.",
+      "description": [
+        "Led development of an 8-week workshop series on recommender systems, with participants gaining hands-on experience in collaborative, content-based, and hybrid filtering.",
+        "Organized guest speaker panels and networking events, fostering industry connections and innovation in AI."
+      ]
+    }
+  ],
+"projects": [
+    {
+      "name": "Pickleball Match Outcome Prediction",
+      "url": "https://github.com/stutterk1d/PickleballMatchAnalysis",
+      "linkLabel": "View Project",
+      "summary": "Developed a predictive model for professional pickleball matches.",
+      "description": [
+        "Targeted the business problem of predicting match outcomes to identify undervalued player skills.",
+        "Scraped match statistics and player metrics.",
+        "Cleaned tabular data and engineered features based on shot selection.",
+        "Selected XGBoost over deep neural networks because tree-based ensembles perform better on structured tabular data with limited sample sizes.",
+        "Applied K-Means clustering to group player playstyles.",
+        "Built a Streamlit application to visualize win probabilities."
+      ],
+      "technologies": ["Python", "XGBoost", "K-Means", "Streamlit", "Pandas"]
+    },
+    {
+      "name": "LungLens",
+      "url": "https://lunglens.vercel.app/",
+      "linkLabel": "View Application",
+      "summary": "Trained a convolutional neural network to predict lung cancer from CT scan images.",
+      "description": [
+        "Developed a CNN model using TensorFlow and Keras to predict lung cancer from CT scan images, achieving 98.9% accuracy.",
+        "Preprocessed the IQ-OTH/NCCD dataset of medical images, optimizing the model to classify cases as normal, benign, or malignant.",
+        "Built a frontend using Next.js, React, and Tailwind CSS, allowing users to upload CT images and receive real-time predictions.",
+        "Integrated Flask with a REST API to handle image uploads and interact with the model."
+      ],
+      "technologies": ["Flask", "TensorFlow", "Google Cloud", "TailwindCSS", "React"]
+    },
+    {
+      "name": "Pearson Student Data Analysis",
+      "url": "https://www.canva.com/design/DAGgEkR4DR4/tN29hiLkFXkDnPGCwLE6uQ/edit?utm_content=DAGgEkR4DR4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "linkLabel": "View Presentation",
+      "summary": "Analyzed student performance factors using regression and clustering.",
+      "description": [
+        "Awarded Best Overall Project in the Data at UCI project competition for impactful analysis.",
+        "Performed EDA with ANOVA and Chi-Square tests to identify significant factors influencing student performance, alongside clustering analysis using K-Means and K-Modes.",
+        "Optimized a Random Forest Regression model using GridSearchCV and cross-validation, achieving R-squared scores of 0.93 (Math Data) and 0.84 (Portuguese Data) while minimizing overfitting."
+      ],
+      "technologies": ["Pandas", "Scikit-learn", "Matplotlib", "Seaborn"]
+    },
+    {
+      "name": "Neural Networks and Deep Learning",
+      "url": "https://www.coursera.org/account/accomplishments/verify/YEHSYU2KKN55?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+      "linkLabel": "View Certification",
+      "summary": "Completed the Deep Learning Specialization on Coursera.",
+      "description": [
+        "Completed the Deep Learning Specialization on Coursera, which covers foundational concepts and techniques in artificial neural networks and deep learning.",
+        "Created a cat/non-cat image classifier that uses an L-layered neural network with forward and back propagation."
+      ],
+      "technologies": ["Python", "NumPy", "SciPy", "Matplotlib"]
+    },
+    {
+      "name": "Fake News Detection System",
+      "url": "https://github.com/stutterk1d/NLPFakeNewsProject",
+      "linkLabel": "View Repository",
+      "summary": "Developed a Fake News Detection System using an LSTM model.",
+      "description": [
+        "Developed a Fake News Detection System using an LSTM model in TensorFlow, achieving 98.75% test accuracy.",
+        "Built a REST API with Flask to classify news articles in real-time based on text inputs.",
+        "Preprocessed news datasets with NLTK by removing stopwords, cleaning text, and tokenizing input data.",
+        "Designed a web interface using HTML/CSS, allowing users to input articles and receive instant classification results."
+      ],
+      "technologies": ["Flask", "TensorFlow", "Keras", "NLTK"]
+    },
+    {
+      "name": "Spotify Song Recommender System",
+      "url": "https://github.com/stutterk1d/SpotifyRecommender",
+      "linkLabel": "View Repository",
+      "summary": "Developed a music recommendation system using Flask and KMeans clustering.",
+      "description": [
+        "Developed a music recommendation system using Flask, TF-IDF, and KMeans clustering to suggest songs based on artist and song title similarities.",
+        "Built a REST API to deliver real-time song recommendations and display results.",
+        "Designed an interactive user interface using HTML, CSS, and JavaScript, providing personalized recommendations.",
+        "Preprocessed a dataset of thousands of songs, using TF-IDF vectorization for feature extraction and KMeans clustering for grouping similar songs."
+      ],
+      "technologies": ["Flask", "scikit-learn"]
+    },
+    {
+      "name": "Crawl-Dashboard",
+      "url": "https://docs.google.com/presentation/d/1P-TAYdHExaRBf-gbP4OxCXVmP1imeUpi/edit?usp=sharing&ouid=105486835688326409121&rtpof=true&sd=true",
+      "linkLabel": "View Presentation",
+      "summary": "Developed real-time dashboard to track web crawls.",
+      "description": [
+        "Developed real-time dashboard to track web crawls, optimized REST API endpoints, and conducted performance testing."
+      ],
+      "technologies": ["Node.js", "MySQL", "Express.js", "k6"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of California, Irvine",
+      "area": "Data Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2024-09",
+      "endDate": "2026-06"
+    }
+  ]
+}

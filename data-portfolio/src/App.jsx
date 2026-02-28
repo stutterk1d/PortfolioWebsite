@@ -1,49 +1,32 @@
-import React, { useRef } from 'react';
-import { PortfolioProvider } from './context/PortfolioContext';
-import StickyHeader from './components/StickyHeader';
-import SectionWrapper from './components/SectionWrapper';
-import HeroSection from './components/HeroSection';
+import React from 'react';
+import HeaderComponent from './components/HeaderComponent';
 import ExperienceList from './components/ExperienceList';
 import ProjectGrid from './components/ProjectGrid';
 import SchoolingList from './components/SchoolingList';
-import SimpleFooter from './components/SimpleFooter';
+import portfolioData from './data.json';
 import './index.css';
 
 export default function App() {
-  const experienceRef = useRef(null);
-  const projectsRef = useRef(null);
-  const schoolingRef = useRef(null);
-
-  const sectionRefs = {
-    experience: experienceRef,
-    projects: projectsRef,
-    schooling: schoolingRef,
-  };
-
   return (
-    <PortfolioProvider>
-      <div className="portfolio-container">
-        <StickyHeader refs={sectionRefs} />
-        <main>
-          <HeroSection />
-
-          <SectionWrapper id="experience" sectionRef={experienceRef}>
-            <h2>Experience</h2>
-            <ExperienceList />
-          </SectionWrapper>
-
-          <SectionWrapper id="projects" sectionRef={projectsRef}>
-            <h2>Projects</h2>
-            <ProjectGrid />
-          </SectionWrapper>
-
-          <SectionWrapper id="schooling" sectionRef={schoolingRef}>
-            <h2>Education</h2>
-            <SchoolingList />
-          </SectionWrapper>
-        </main>
-        <SimpleFooter />
-      </div>
-    </PortfolioProvider>
+    <div className="portfolio-container">
+      <main>
+        <HeaderComponent personalInfo={portfolioData.personalInfo} summary={portfolioData.summary} />
+        
+        <section id="experience">
+          <h2>Experience</h2>
+          <ExperienceList experience={portfolioData.experience} />
+        </section>
+        
+        <section id="projects">
+          <h2>Projects</h2>
+          <ProjectGrid projects={portfolioData.projects} />
+        </section>
+        
+        <section id="schooling">
+          <h2>Education</h2>
+          <SchoolingList education={portfolioData.education} />
+        </section>
+      </main>
+    </div>
   );
 }

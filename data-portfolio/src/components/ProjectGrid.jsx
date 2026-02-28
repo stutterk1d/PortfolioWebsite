@@ -1,61 +1,26 @@
-import React, { useRef, useContext } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { PortfolioContext } from '../context/PortfolioContext';
+import React from 'react';
 
-// Helper component for the cinematic text effect
-function CinematicParagraph({ textString }) {
-  const paragraphRef = useRef(null);
-  
-  // Tracks the bounding box of this specific paragraph 
-  const { scrollYProgress } = useScroll({
-    target: paragraphRef,
-    offset: ["start 85%", "end 50%"]
-  });
-
-  // Splits the string into individual words 
-  const wordArray = textString.split(" ");
-
+export default function ProjectGrid({ projects }) {
   return (
-    <p ref={paragraphRef} style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
-      {wordArray.map((singleWord, indexNumber) => {
-        const stepSize = 1 / wordArray.length;
-        const startPoint = indexNumber * stepSize;
-        const endPoint = startPoint + stepSize;
-        
-        // Maps opacity to the exact scroll progress 
-        const wordOpacity = useTransform(scrollYProgress, [startPoint, endPoint], [0.2, 1]);
-
-        return (
-          // Wraps each word inside a motion.span tag 
-          <motion.span key={indexNumber} style={{ opacity: wordOpacity }}>
-            {singleWord}
-          </motion.span>
-        );
-      })}
-    </p>
-  );
-}
-
-export default function ProjectGrid() {
-  const { projects } = useContext(PortfolioContext);
-
-  return (
-     <div style={{ display: 'flex', flexDirection: 'column', gap: '120px' }}>
+     <div style={{ display: 'flex', flexDirection: 'column', gap: '3.17cm' }}>
        {projects.map((projectData, indexNumber) => (
-         <div key={indexNumber}>
+         <article key={indexNumber}>
            <h3>{projectData.name}</h3>
-           <a href={projectData.url} target="_blank" rel="noreferrer">View Repository</a>
-           <p style={{ marginTop: '16px', fontWeight: 600 }}>{projectData.summary}</p>
+           <a href={projectData.url} target="_blank" rel="noreferrer">{projectData.linkLabel}</a>
+           <p style={{ marginTop: '0.42cm', fontWeight: 600 }}>{projectData.summary}</p>
            
-           <CinematicParagraph textString={projectData.description} />
+           <ul style={{ marginTop: '0.42cm', paddingLeft: '0.6cm' }}>
+             {projectData.description.map((bulletPoint, pointIndex) => (
+               <li key={pointIndex} style={{ marginBottom: '0.2cm' }}>{bulletPoint}</li>
+             ))}
+           </ul>
            
-           <div style={{ display: 'flex', gap: '16px', marginTop: '24px' }}>
+           <div style={{ display: 'flex', gap: '0.42cm', marginTop: '0.63cm', color: 'var(--text-secondary)' }}>
              {projectData.technologies.map((techItem, techIndex) => (
                <small key={techIndex}>{techItem}</small>
              ))}
            </div>
-           <p style={{ marginTop: '24px', letterSpacing: '4px' }}>{projectData.sparkline}</p>
-         </div>
+         </article>
        ))}
      </div>
   );

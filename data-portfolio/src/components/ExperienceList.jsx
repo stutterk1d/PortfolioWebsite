@@ -1,48 +1,20 @@
-import React, { useContext } from 'react';
-import { motion } from 'framer-motion';
-import { PortfolioContext } from '../context/PortfolioContext';
+import React from 'react';
 
-export default function ExperienceList() {
-  const { experience } = useContext(PortfolioContext);
-
-  const listVariants = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.1 // Cascades items into view [cite: 276, 277]
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { y: 40, opacity: 0 }, // Initial invisible state 
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: 'spring', // Applies organic physics 
-        stiffness: 100,
-        damping: 20
-      }
-    }
-  };
-
+export default function ExperienceList({ experience }) {
   return (
-    <motion.div
-      variants={listVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }}
-      style={{ display: 'flex', flexDirection: 'column', gap: '64px' }}
-    >
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1cm' }}>
       {experience.map((jobData, indexNumber) => (
-        <motion.div key={indexNumber} variants={itemVariants}>
+        <article key={indexNumber}>
           <h3>{jobData.position} at {jobData.company}</h3>
           <small>{jobData.startDate} to {jobData.endDate}</small>
-          <p style={{ fontWeight: 600, marginTop: '16px' }}>{jobData.summary}</p>
-          <p>{jobData.description}</p>
-        </motion.div>
+          <p style={{ fontWeight: 600, marginTop: '0.42cm' }}>{jobData.summary}</p>
+          <ul style={{ marginTop: '0.42cm', paddingLeft: '0.6cm' }}>
+            {jobData.description.map((bulletPoint, pointIndex) => (
+              <li key={pointIndex} style={{ marginBottom: '0.2cm' }}>{bulletPoint}</li>
+            ))}
+          </ul>
+        </article>
       ))}
-    </motion.div>
+    </div>
   );
 }

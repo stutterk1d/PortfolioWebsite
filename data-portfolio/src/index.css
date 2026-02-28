@@ -1,121 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
 
 :root {
-  /* Color Palette - Apple Aesthetic */
-  --bg-athens-gray: #F5F5F7;           /* */
-  --text-shark: #1D1D1F;               /* */
-  --text-system-gray: #818181;         /* */
-  --interactive-science-blue: #0066CC; /* */
-  --surface-pure-white: #FFFFFF;       /* */
-
-  /* 8-Point Grid Spacing */
-  --space-1: 8px;   /* 2.11 millimetres */
-  --space-2: 16px;  /* 4.23 millimetres */
-  --space-3: 24px;  /* 6.35 millimetres */
-  --space-4: 32px;  /* 8.46 millimetres */
-  --space-8: 64px;  /* 1.69 centimetres */
-  --space-15: 120px; /* 3.17 centimetres */
-  --space-30: 240px; /* 6.35 centimetres */
-
-  /* Typography Scale */
-  --font-hero: 120px; /* 3.17 centimetres */
-  --font-h2: 64px;    /* 1.69 centimetres */
-  --font-h3: 32px;    /* 8.46 millimetres */
-  --font-body: 18px;  /* 4.76 millimetres */
-  --font-meta: 14px;  /* 3.70 millimetres */
+  --bg-base: #FBF4E2;
+  --bg-surface: #F8F5F0;
+  --text-primary: #3E2C23;
+  --text-secondary: #7C8363;
+  --accent-warm: #4A5F3C;
+  --border-subtle: #D8C3A5;
+  
+  --space-1: 0.21cm;
+  --space-2: 0.42cm;
+  --space-3: 0.63cm;
+  --space-4: 0.84cm;
+  --space-8: 1.69cm;
+  --space-15: 3.17cm;
+  --space-30: 6.35cm;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bg-athens-gray);
-  color: var(--text-shark);
+  background-color: var(--bg-base);
+  color: var(--text-primary);
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-section {
-  padding: var(--space-30) 0;
+.portfolio-container {
+  max-width: 21cm;
+  margin: 0 auto;
+  padding: var(--space-4);
 }
 
-h1 {
-  font-size: var(--font-hero);
-  line-height: 1.1;
-  letter-spacing: -0.04em; /* */
-  font-weight: 900;
-  margin-bottom: var(--space-8);
+section {
+  padding: var(--space-8) 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+h1, h3 {
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
 }
 
 h2 {
-  font-size: var(--font-h2);
-  line-height: 1.2;
-  letter-spacing: -0.02em; /* */
-  font-weight: 700;
-  margin-bottom: var(--space-4);
-}
-
-h3 {
-  font-size: var(--font-h3);
-  line-height: 1.3;
-  letter-spacing: -0.01em; /* */
-  font-weight: 600;
-}
-
-p {
-  font-size: var(--font-body);
-  line-height: 1.5; /* */
-  letter-spacing: 0.0em;
-  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+  text-align: center;
+  font-size: 2.25rem;
 }
 
 a {
-  color: var(--interactive-science-blue);
+  color: var(--accent-warm);
   text-decoration: none;
-  transition: opacity 0.2s ease;
+  margin-right: var(--space-2);
 }
 
 a:hover {
   opacity: 0.7;
 }
 
-small {
-  font-size: var(--font-meta);
-  line-height: 1.4;
-  letter-spacing: 0.02em; /* */
-  font-weight: 500;
-  color: var(--text-system-gray);
+.headshot {
+  width: 3.7cm;
+  height: 3.7cm;
+  border-radius: 50%;
+  border: 4px solid var(--bg-surface);
+  filter: sepia(15%) contrast(95%);
+  margin-bottom: var(--space-4);
+  object-fit: cover;
 }
 
-/* ADD NEW LAYOUT COMPONENTS BELOW THIS LINE */
-
-.sticky-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  height: var(--space-8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(245, 245, 247, 0.8); /* */
-  backdrop-filter: blur(10px);               /* */
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(29, 29, 31, 0.1);
+.summary-text {
+  max-width: 21cm;
+  line-height: 1.7;
+  margin-top: var(--space-4);
 }
 
-.section-wrapper {
-  padding-top: var(--space-30);    /* 6.35 centimetres */
-  padding-bottom: var(--space-30); /* 6.35 centimetres */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 1200px; /* 31.75 centimetres */
-  margin: 0 auto;
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-}
-
-.hero-wrapper {
-  padding-top: var(--space-15);
-  padding-bottom: var(--space-15);
+html {
+  scroll-behavior: smooth;
 }
