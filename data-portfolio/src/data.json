@@ -13,23 +13,22 @@
   "experience": [
     {
       "company": "ITTIA",
+      "location": "Irvine, CA",
       "position": "Data Science Intern",
       "startDate": "May 2025",
       "endDate": "September 2025",
-      "summary": "Built on-device data pipelines with ITTIA DB Lite on STM32N6 microcontrollers.",
       "description": [
         "Build on-device data pipelines with ITTIA DB Lite on STM32 to collect, filter, and aggregate time-series sensor data for ML feature engineering.",
         "Designed schemas, wrote queries, and benchmarked ingestion/latency to support low-memory, low-latency analytics.",
-        "Ran experiments and analyses to compare storage formats and query plans, producing metrics dashboards and test suites used by the team.",
         "Authored examples for embedded ML workflows that demonstrated reproducible data prep and evaluation on microcontrollers."
       ]
     },
     {
       "company": "Crawlbee",
+      "location": "Remote",
       "position": "Research Fellow",
       "startDate": "June 2024",
       "endDate": "August 2024",
-      "summary": "Developed a real-time data visualization dashboard on AWS EC2.",
       "description": [
         "Developed a real-time data visualization dashboard on AWS EC2, managing over 100 million monthly crawls.",
         "Designed and implemented a scalable back-end architecture using MySQL, Node.js, and Express.js, exceeding performance requirements by 70% through optimized REST API endpoints and a custom data pipeline.",
@@ -40,10 +39,10 @@
     },
     {
       "company": "The Ballard Cognitive and Neural Sciences Lab",
+      "location": "Riverside, CA",
       "position": "Research Assistant",
       "startDate": "September 2023",
       "endDate": "June 2024",
-      "summary": "Analyzed fMRI data to investigate the neural basis of decision-making.",
       "description": [
         "Analyzed fMRI data to investigate the neural basis of decision-making, contributing to cutting-edge neuroscience research.",
         "Conducted data preprocessing, feature engineering, and ROI selection using FSL and Python.",
@@ -53,10 +52,10 @@
     },
     {
       "company": "Data Science Academy",
+      "location": "Riverside, CA",
       "position": "Academic Leader",
       "startDate": "March 2023",
       "endDate": "June 2024",
-      "summary": "Instructed students in data science fundamentals.",
       "description": [
         "Instructed over 200 middle and high school students in data science fundamentals, fostering early interest in STEM fields.",
         "Designed and adapted curriculum covering Python programming, data cleaning, visualization, and machine learning using Google Colab.",
@@ -66,10 +65,10 @@
     },
     {
       "company": "Highlander Statistics Society",
+      "location": "Riverside, CA",
       "position": "President",
       "startDate": "May 2023",
       "endDate": "June 2024",
-      "summary": "Led the management and execution of two data science projects.",
       "description": [
         "Led the management and execution of two data science projects in Python and SQL, with a team of approximately five members per project.",
         "Supervised a \"Predictive Modeling for Housing Prices\" project, which involved data preprocessing, exploratory data analysis, feature engineering, model building, evaluation, and deployment of a predictive housing price model.",
@@ -78,10 +77,10 @@
     },
     {
       "company": "Association of Computing Machinery at UCR",
+      "location": "Riverside, CA",
       "position": "Alumni Chair",
       "startDate": "June 2023",
       "endDate": "March 2024",
-      "summary": "Organized events connecting students with professionals.",
       "description": [
         "Organized and coordinated networking events, panel discussions, and workshops, connecting over 100 students with industry professionals and alumni.",
         "Assisted in organizing club events, hackathons, and workshops, leveraging the expertise and resources of alumni to improve the overall experience.",
@@ -91,10 +90,10 @@
     },
     {
       "company": "Artificial Intelligence Student Collective",
+      "location": "Riverside, CA",
       "position": "Project Manager",
       "startDate": "January 2024",
       "endDate": "September 2024",
-      "summary": "Led workshop series on recommender systems.",
       "description": [
         "Led development of an 8-week workshop series on recommender systems, with participants gaining hands-on experience in collaborative, content-based, and hybrid filtering.",
         "Organized guest speaker panels and networking events, fostering industry connections and innovation in AI."
@@ -104,7 +103,7 @@
 "projects": [
     {
       "name": "Pickleball Match Outcome Prediction",
-      "url": "https://github.com/stutterk1d/PickleballMatchAnalysis",
+      "url": "https://pickleballmatchanalysis-ibf7z5g2u9ri6hdkxdrjek.streamlit.app/",
       "linkLabel": "View Project",
       "summary": "Developed a predictive model for professional pickleball matches.",
       "description": [
@@ -190,13 +189,20 @@
       "technologies": ["Node.js", "MySQL", "Express.js", "k6"]
     }
   ],
-  "education": [
+"education": [
     {
-      "institution": "University of California, Irvine",
-      "area": "Data Science",
-      "studyType": "Bachelor of Science",
-      "startDate": "2024-09",
-      "endDate": "2026-06"
+      "institution": "University of California - Irvine",
+      "location": "Irvine, California",
+      "degree": "Bachelor of Science in Data Science",
+      "startDate": "September 2024",
+      "endDate": "June 2026"
+    },
+    {
+      "institution": "University of California - Riverside",
+      "location": "Riverside, California",
+      "degree": "Bachelor of Science in Data Science",
+      "startDate": "September 2022",
+      "endDate": "June 2024"
     }
   ]
 }
