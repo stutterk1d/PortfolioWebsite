@@ -16,7 +16,7 @@
       "location": "Irvine, CA",
       "position": "Data Science Intern",
       "startDate": "May 2025",
-      "endDate": "September 2025",
+      "endDate": "Present",
       "description": [
         "Build on-device data pipelines with ITTIA DB Lite on STM32 to collect, filter, and aggregate time-series sensor data for ML feature engineering.",
         "Designed schemas, wrote queries, and benchmarked ingestion/latency to support low-memory, low-latency analytics.",
@@ -101,6 +101,18 @@
     }
   ],
 "projects": [
+    {
+      "name": "PokedexLLM",
+      "url": "https://github.com/stutterk1d/PokedexLLM",
+      "linkLabel": "View Repository",
+      "summary": "Developed a predictive model for professional pickleball matches.",
+      "description": [
+        "Created an end-to-end Retrieval-Augmented Generation (RAG) pipeline utilizing LangChain to ingest, semantically chunk, and a detailed dataset describing all information about all 1025 Pokemon, enabling highly contextualized, accurate natural language interactions.",
+        "Engineered a highly optimized vector database utilizing ChromaDB to store dense embeddings of entity statistics and narrative lore, refining semantic search retrieval.",
+        "Deployed a low-latency REST API via Flask integrated seamlessly with a responsive React frontend, orchestrating the dynamic retrieval of context and LLM inference to deliver real-time user responses",
+      ],
+      "technologies": ["Python", "XGBoost", "K-Means", "Streamlit", "Pandas"]
+    },
     {
       "name": "Pickleball Match Outcome Prediction",
       "url": "https://pickleballmatchanalysis-ibf7z5g2u9ri6hdkxdrjek.streamlit.app/",
