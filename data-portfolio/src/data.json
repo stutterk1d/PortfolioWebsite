@@ -109,7 +109,7 @@
       "description": [
         "Created an end-to-end Retrieval-Augmented Generation (RAG) pipeline utilizing LangChain to ingest, semantically chunk, and a detailed dataset describing all information about all 1025 Pokemon, enabling highly contextualized, accurate natural language interactions.",
         "Engineered a highly optimized vector database utilizing ChromaDB to store dense embeddings of entity statistics and narrative lore, refining semantic search retrieval.",
-        "Deployed a low-latency REST API via Flask integrated seamlessly with a responsive React frontend, orchestrating the dynamic retrieval of context and LLM inference to deliver real-time user responses",
+        "Deployed a low-latency REST API via Flask integrated seamlessly with a responsive React frontend, orchestrating the dynamic retrieval of context and LLM inference to deliver real-time user responses"
       ],
       "technologies": ["Python", "XGBoost", "K-Means", "Streamlit", "Pandas"]
     },
