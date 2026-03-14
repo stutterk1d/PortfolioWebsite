@@ -105,13 +105,13 @@
       "name": "PokedexLLM",
       "url": "https://github.com/stutterk1d/PokedexLLM",
       "linkLabel": "View Repository",
-      "summary": "Developed a predictive model for professional pickleball matches.",
+      "summary": "Developed a LLM to answer questions about Pokemon.",
       "description": [
-        "Created an end-to-end Retrieval-Augmented Generation (RAG) pipeline utilizing LangChain to ingest, semantically chunk, and a detailed dataset describing all information about all 1025 Pokemon, enabling highly contextualized, accurate natural language interactions.",
-        "Engineered a highly optimized vector database utilizing ChromaDB to store dense embeddings of entity statistics and narrative lore, refining semantic search retrieval.",
-        "Deployed a low-latency REST API via Flask integrated seamlessly with a responsive React frontend, orchestrating the dynamic retrieval of context and LLM inference to deliver real-time user responses"
-      ],
-      "technologies": ["Python", "XGBoost", "K-Means", "Streamlit", "Pandas"]
+        "Built a Retrieval-Augmented Generation pipeline. Fine-tuned a Llama 3.1 8B model using Unsloth, Parameter-Efficient Fine-Tuning, and Low-Rank Adaptation",
+        "Engineered a vector database with Chroma to store text embeddings. Generated these embeddings for 1025 Pokémon using the BAAI/bge-large-en-v1.5 engine.",
+        "Programmed a user interface with Streamlit to connect the database and the language model"
+        ],
+      "technologies": ["Python","Unsloth","Llama 3.1 8B","Chroma","Streamlit","PEFT","LoRA"]
     },
     {
       "name": "Pickleball Match Outcome Prediction",
