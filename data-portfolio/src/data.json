@@ -100,7 +100,25 @@
       ]
     }
   ],
-"projects": [
+  "projects": [
+    {
+      "name": "FAERS Pharmacovigilance Data Pipeline",
+      "url": "https://github.com/stutterk1d/FAERSDataPipeline",
+      "linkLabel": "View Repository",
+      "summary": "Built an end-to-end data engineering pipeline to detect drug safety signals from FDA adverse event reports.",
+      "description": [
+        "Built an end-to-end PySpark pipeline on a Bronze/Silver/Gold medallion architecture, ingesting ~11.6M rows across 7 FAERS tables and producing 767K+ deduplicated adverse-event reports in Delta Lake.",
+        "Engineered idempotent Delta Lake MERGE upserts to deduplicate cases across quarterly releases, removing 35K+ duplicate reports and enabling reproducible re-runs with no data drift.",
+        "Implemented FDA-style PRR/ROR disproportionality analysis (chi-square with Yates' correction, 95% CIs) over 586K drug-event pairs, flagging 85K+ safety signals and validating 7/7 known associations such as statins–rhabdomyolysis.",
+        "Developed a PySpark data-quality framework running 30 automated null, range, domain, and referential-integrity checks, persisted as a Delta table for historical tracking."
+      ],
+      "technologies": [
+        "PySpark",
+        "Delta Lake",
+        "Azure Databricks",
+        "Python"
+      ]
+    },
     {
       "name": "PokedexLLM",
       "url": "https://github.com/stutterk1d/PokedexLLM",
@@ -111,8 +129,16 @@
         "Fine-tuned the model using Unsloth, Parameter-Efficient Fine-Tuning, and Low-Rank Adaptation",
         "Engineered a vector database with ChromaDB to store text embeddings. Generated these embeddings for 1025 Pokémon using the BAAI/bge-large-en-v1.5 engine.",
         "Programmed a user interface with Streamlit to connect the database and the language model"
-        ],
-      "technologies": ["Python","Unsloth","Llama 3.1 8B","Chroma","Streamlit","PEFT","LoRA"]
+      ],
+      "technologies": [
+        "Python",
+        "Unsloth",
+        "Llama 3.1 8B",
+        "Chroma",
+        "Streamlit",
+        "PEFT",
+        "LoRA"
+      ]
     },
     {
       "name": "Pickleball Match Outcome Prediction",
@@ -127,7 +153,13 @@
         "Applied K-Means clustering to group player playstyles.",
         "Built a Streamlit application to visualize win probabilities."
       ],
-      "technologies": ["Python", "XGBoost", "K-Means", "Streamlit", "Pandas"]
+      "technologies": [
+        "Python",
+        "XGBoost",
+        "K-Means",
+        "Streamlit",
+        "Pandas"
+      ]
     },
     {
       "name": "LungLens",
@@ -140,7 +172,13 @@
         "Built a frontend using Next.js, React, and Tailwind CSS, allowing users to upload CT images and receive real-time predictions.",
         "Integrated Flask with a REST API to handle image uploads and interact with the model."
       ],
-      "technologies": ["Flask", "TensorFlow", "Google Cloud", "TailwindCSS", "React"]
+      "technologies": [
+        "Flask",
+        "TensorFlow",
+        "Google Cloud",
+        "TailwindCSS",
+        "React"
+      ]
     },
     {
       "name": "Pearson Student Data Analysis",
@@ -152,7 +190,12 @@
         "Performed EDA with ANOVA and Chi-Square tests to identify significant factors influencing student performance, alongside clustering analysis using K-Means and K-Modes.",
         "Optimized a Random Forest Regression model using GridSearchCV and cross-validation, achieving R-squared scores of 0.93 (Math Data) and 0.84 (Portuguese Data) while minimizing overfitting."
       ],
-      "technologies": ["Pandas", "Scikit-learn", "Matplotlib", "Seaborn"]
+      "technologies": [
+        "Pandas",
+        "Scikit-learn",
+        "Matplotlib",
+        "Seaborn"
+      ]
     },
     {
       "name": "Neural Networks and Deep Learning",
@@ -163,7 +206,12 @@
         "Completed the Deep Learning Specialization on Coursera, which covers foundational concepts and techniques in artificial neural networks and deep learning.",
         "Created a cat/non-cat image classifier that uses an L-layered neural network with forward and back propagation."
       ],
-      "technologies": ["Python", "NumPy", "SciPy", "Matplotlib"]
+      "technologies": [
+        "Python",
+        "NumPy",
+        "SciPy",
+        "Matplotlib"
+      ]
     },
     {
       "name": "Fake News Detection System",
@@ -176,7 +224,12 @@
         "Preprocessed news datasets with NLTK by removing stopwords, cleaning text, and tokenizing input data.",
         "Designed a web interface using HTML/CSS, allowing users to input articles and receive instant classification results."
       ],
-      "technologies": ["Flask", "TensorFlow", "Keras", "NLTK"]
+      "technologies": [
+        "Flask",
+        "TensorFlow",
+        "Keras",
+        "NLTK"
+      ]
     },
     {
       "name": "Spotify Song Recommender System",
@@ -189,7 +242,10 @@
         "Designed an interactive user interface using HTML, CSS, and JavaScript, providing personalized recommendations.",
         "Preprocessed a dataset of thousands of songs, using TF-IDF vectorization for feature extraction and KMeans clustering for grouping similar songs."
       ],
-      "technologies": ["Flask", "scikit-learn"]
+      "technologies": [
+        "Flask",
+        "scikit-learn"
+      ]
     },
     {
       "name": "Crawl-Dashboard",
@@ -199,10 +255,22 @@
       "description": [
         "Developed real-time dashboard to track web crawls, optimized REST API endpoints, and conducted performance testing."
       ],
-      "technologies": ["Node.js", "MySQL", "Express.js", "k6"]
+      "technologies": [
+        "Node.js",
+        "MySQL",
+        "Express.js",
+        "k6"
+      ]
     }
   ],
-"education": [
+  "education": [
+    {
+      "institution": "University of California - Irvine",
+      "location": "Irvine, California",
+      "degree": "Master of Data Science",
+      "startDate": "September 2026",
+      "endDate": "June 2028"
+    },
     {
       "institution": "University of California - Irvine",
       "location": "Irvine, California",
